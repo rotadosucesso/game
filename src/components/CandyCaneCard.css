@@ -1,0 +1,25 @@
+.candy-cane-wrapper {
+  /* O segredo da listra: repeating-linear-gradient */
+  background: repeating-linear-gradient(
+    -45deg,
+    #FF6B81, /* Rosa escuro/Vermelho */
+    #FF6B81 15px,
+    #FFFFFF 15px,
+    #FFFFFF 30px
+  );
+  border-radius: 20px;
+  /* O padding define a espessura da "borda" de bengala doce */
+  padding: 8px; 
+  box-shadow: 0 6px 0px rgba(0, 0, 0, 0.15); /* Efeito 3D da base */
+}
+
+.candy-cane-inner {
+  background-color: #FFF0F5; /* Um fundo levemente rosado */
+  /* O border-radius interno precisa ser menor que o externo para encaixar perfeito */
+  border-radius: 12px; 
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
