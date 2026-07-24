@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+
+/* ==========================================
+   ESTILO BASE DO BOTÃO BOLHA 3D
+   ========================================== */
+.bubble-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #FFFFFF;
+    border-radius: 24px;
+    padding: 10px 14px;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Fredoka', 'Arial Rounded MT Bold', sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Camada de brilho refletivo superior */
+.bubble-btn-gloss {
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    right: 8px;
+    height: 38%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 16px 16px 80% 80%;
+    pointer-events: none;
+}
+
+/* Container interno */
+.bubble-btn-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4px;
+}
+
+/* Ícone dentro do botão */
+.bubble-btn-icon {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Texto 3D do botão */
+.bubble-btn-text {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-shadow: 
+        1px  1px 0px rgba(0, 0, 0, 0.3),
+       -1px -1px 0px rgba(0, 0, 0, 0.3),
+        0px  3px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* Efeito de clique (AFUNDAR O BOTÃO EM 3D) */
+.bubble-btn:active {
+    transform: translateY(5px) !important;
+}
+
+/* ==========================================
+   VARIÁVEIS DE COR E TEMAS (PALETA DOCE)
+   ========================================== */
+
+/* Tema VERDE (Ranking / Seu Progresso) */
+.bubble-btn-green {
+    background: linear-gradient(180deg, #A2F348 0%, #43C812 100%);
+    box-shadow: 
+        inset 0 3px 2px rgba(255, 255, 255, 0.8),
+        0 8px 0 #288206,
+        0 12px 15px rgba(0, 0, 0, 0.25);
+}
+.bubble-btn-green:active {
+    box-shadow: 
+        inset 0 2px 2px rgba(255, 255, 255, 0.6),
+        0 3px 0 #288206,
+        0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tema AZUL (Missões) */
+.bubble-btn-blue {
+    background: linear-gradient(180deg, #6CE7FF 0%, #159CFF 100%);
+    box-shadow: 
+        inset 0 3px 2px rgba(255, 255, 255, 0.8),
+        0 8px 0 #0B63B8,
+        0 12px 15px rgba(0, 0, 0, 0.25);
+}
+.bubble-btn-blue:active {
+    box-shadow: 
+        inset 0 2px 2px rgba(255, 255, 255, 0.6),
+        0 3px 0 #0B63B8,
+        0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tema ROXO / LILÁS (Feed) */
+.bubble-btn-purple {
+    background: linear-gradient(180deg, #EC88FF 0%, #B23EFF 100%);
+    box-shadow: 
+        inset 0 3px 2px rgba(255, 255, 255, 0.8),
+        0 8px 0 #6812A5,
+        0 12px 15px rgba(0, 0, 0, 0.25);
+}
+.bubble-btn-purple:active {
+    box-shadow: 
+        inset 0 2px 2px rgba(255, 255, 255, 0.6),
+        0 3px 0 #6812A5,
+        0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tema ROSA (Info) */
+.bubble-btn-pink {
+    background: linear-gradient(180deg, #FF84A7 0%, #FF3366 100%);
+    box-shadow: 
+        inset 0 3px 2px rgba(255, 255, 255, 0.8),
+        0 8px 0 #B00A32,
+        0 12px 15px rgba(0, 0, 0, 0.25);
+}
+.bubble-btn-pink:active {
+    box-shadow: 
+        inset 0 2px 2px rgba(255, 255, 255, 0.6),
+        0 3px 0 #B00A32,
+        0 5px 8px rgba(0, 0, 0, 0.2);
+}
