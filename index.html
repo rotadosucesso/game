@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Configuração vital para o layout Mobile-First (impede o usuário de dar zoom acidental no jogo) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Cor da barra de status do celular (baseado no azul/rosa do tema) -->
+    <meta name="theme-color" content="#FFC1E3">
+
+    <title>Rota do Sucesso - Competição</title>
+
+    <!-- Importação do CSS Global que terá as variáveis de cor e fontes -->
+    <link rel="stylesheet" href="global.css">
+
+    <!-- Arquivo necessário futuramente para permitir a instalação do App no Android/iOS -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+</head>
+<body>
+    
+    <!-- O contêiner principal onde o main.js vai renderizar as telas (Login ou Home) -->
+    <div id="app"></div>
+
+    <!-- O Orquestrador do seu projeto. O type="module" é o que faz a mágica dos imports funcionar -->
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>
